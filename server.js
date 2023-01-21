@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 });
 
 
-app.get('/get-random-quote', async (req, res) => {
+app.get('/', async (req, res) => {
   console.log('api fething');
   let data = await fetch('https://zenquotes.io/api/random');
   let resp = await data.json();
